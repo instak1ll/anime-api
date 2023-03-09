@@ -18,13 +18,12 @@ async function buscarInput() {
     const DIV = document.createElement('div')
 
     DIV.innerHTML = `<a href="${data.results[0].source_url}" target="_blank">
-    <img alt="${data.results[0].artist_name}" src="${data.results[0].url}" width='228px' class='m-2 border border-dark shadow-sm'></a>`
+    <img title="${data.results[0].artist_name}" alt="${data.results[0].artist_name}" src="${data.results[0].url}" width='228px' class='m-2 border border-dark shadow-sm'></a>`
     VanillaTilt.init(DIV, {
         max: 25,
         speed: 400
     });
     waifu.appendChild(DIV)
 }
-
 
 
