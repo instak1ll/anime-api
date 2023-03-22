@@ -5,22 +5,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./index.css">
+  <title>Random Neko Images</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- <link rel="stylesheet" href="./index.css"> -->
 </head>
 
 <body>
-  <div class="container">
-    <div class="row col d-flex justify-content-center">
+  <div class="container" id="home">
+    <nav class="container d-flex flex-column justify-content-center position-fixed bg-white pb-2" style="z-index: 2000;" id="main">
       <h1 class="display-6 row col d-flex justify-content-center">Busca a tu WAIFU favorita</h1>
       <button class="btn btn-dark" id="button">Random waifu</button>
-      <a href="">
-        <div class="d-flex flex-wrap justify-content-center" id="waifu">
-      </a>
+    </nav>
+    <div class="row col d-flex justify-content-center">
+      <!-- Remove anchor tag -->
+      <div class="mt-5 pt-5 d-flex flex-wrap justify-content-center" id="waifu">
     </div>
   </div>
   </div>
-
+  <a href="#home">
+    <button class="position-fixed bottom-0 end-0 btn btn-dark m-3" style="visibility: hidden; display: none; width: 30px; height: 30px; box-sizing: border-box;" id="up">
+      <i class="bi bi-arrow-up-short" style="font-size: 20px; z-index: 2000; color: white; display: flex; justify-content: center; align-items: center;"></i>
+    </button>
+  </a>
 </body>
 <script type="module" src="./index.js"></script>
 

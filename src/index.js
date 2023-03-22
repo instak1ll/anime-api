@@ -26,4 +26,23 @@ async function buscarInput() {
     waifu.appendChild(DIV)
 }
 
+// Hidden Button and Main text
 
+const marginHidden = 150
+const mainText = document.querySelector('#main')
+const upBtn = document.querySelector('#up')
+
+window.addEventListener('scroll', () => {
+    if (scrollY >= marginHidden)
+    {
+        upBtn.style.visibility = "visible"
+        upBtn.style.display = "inline"
+        mainText.style.top = "-47px"
+    }
+    else
+    {
+        upBtn.style.visibility = "hidden"
+        upBtn.style.display = "none"
+        mainText.style.top = "0px"
+    }
+})
